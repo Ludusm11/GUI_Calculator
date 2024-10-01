@@ -20,9 +20,9 @@ def clear_entry():
     entry.delete(0, END)
 
 # Initialize the main window
-root = ttk.Window(themename="superhero")
-root.title("Calculator")
-root.geometry("300x400")
+root = ttk.Window(themename="superhero") #you can change the theme like : vapor, solar, journal etc....:)
+root.title("Calculator") ## title :)
+root.geometry("300x400") ## size of windows bar 
 
 # Entry widget for displaying the expression and result
 entry = ttk.Entry(root, font=("Helvetica", 20), justify="right")
