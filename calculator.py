@@ -4,10 +4,12 @@ from ttkbootstrap.constants import *
 # Function to evaluate and display the result
 def calculate():
     try:
-        result = eval(entry.get())
+        expression = entry.get()
+        # Only allow basic arithmetic operations
+        result = ast.literal_eval(expression)
         entry.delete(0, END)
         entry.insert(END, str(result))
-    except:
+    except (ValueError, SyntaxError):
         entry.delete(0, END)
         entry.insert(END, "Error")
 
