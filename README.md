@@ -23,6 +23,7 @@ A simple yet elegant calculator built using Python and `ttkbootstrap`. This calc
 ```bash
 python-calculator-gui/
 ├── calculator.py        # Main Python script for the calculator
+├── calculator.exe       # Main Exe of the calculator (Desktop)
 ├── README.md            # Project README file
 ├── requirements.txt     # Dependencies
-└── assets/              # (Optional) Screenshots or other assets for the project
+└── assets/              # Screenshot & icon for project
